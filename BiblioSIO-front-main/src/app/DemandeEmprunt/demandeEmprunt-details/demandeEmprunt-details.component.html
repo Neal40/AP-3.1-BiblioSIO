@@ -1,0 +1,15 @@
+<h1 *ngIf="solo">Détail demande emprunt : </h1>
+<article>
+  <div class="entity">
+    <a [href]="demandeEmprunt.emprunteur.url">{{demandeEmprunt.emprunteur.value}}</a>
+    <a [href]="demandeEmprunt.exemplaire.url">{{demandeEmprunt.exemplaire.value}}</a>
+    <p>{{demandeEmprunt.dateCreation}}</p>
+    <p>{{demandeEmprunt.dateTraitement}}</p>
+    <p>{{demandeEmprunt.statut}}</p>
+  </div>
+  <div class="controls">
+    <button (click)="update()">Modifier</button>
+    <button (click)="delete()">Supprimer</button>
+  </div>
+</article>
+

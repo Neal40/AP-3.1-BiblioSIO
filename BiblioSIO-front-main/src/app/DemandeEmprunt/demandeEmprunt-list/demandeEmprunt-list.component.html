@@ -1,0 +1,7 @@
+<h1>Liste des demande d'emprunts : </h1>
+<app-demandeEmprunt-details
+  *ngFor="let demandeEmprunt of demandeEmprunts"
+  (click)="openDemandeEmpruntDetails(demandeEmprunt)"
+  [demandeEmprunt]="demandeEmprunt"
+  [solo]="false"></app-demandeEmprunt-details>
+<button class="create" (click)="openCreateDemandeEmprunt()">Créer</button>
